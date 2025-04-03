@@ -12,10 +12,17 @@ package ass01.jpf;
 /**
  *
  * 2-dimensional vector
- * objects are completely state-less
  *
  */
-public record V2d(double x,double y) {
+public class V2d {
+
+    public final double x;
+    public final double y;
+
+    public V2d(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public V2d sum(V2d v){
         return new V2d(x+v.x,y+v.y);
@@ -37,5 +44,12 @@ public record V2d(double x,double y) {
     public String toString(){
         return "V2d("+x+","+y+")";
     }
-    
+
+    public double x() {
+        return x;
+    }
+
+    public double y() {
+        return y;
+    }
 }

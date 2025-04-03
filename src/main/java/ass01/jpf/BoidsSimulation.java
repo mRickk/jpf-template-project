@@ -32,8 +32,8 @@ public class BoidsSimulation {
 				AVOID_RADIUS);
 		var sim = new BoidsSimulator(model, nCycle);
 
-		var view = new BoidsView(model, sim, SCREEN_WIDTH, SCREEN_HEIGHT);
-		sim.attachView(view);
+//		var view = new BoidsView(model, sim, SCREEN_WIDTH, SCREEN_HEIGHT);
+//		sim.attachView(view);
 		sim.startSimulator();
 		sim.runSimulation();
     }

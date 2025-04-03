@@ -86,7 +86,7 @@ public class BoidsSimulator {
             } finally {
                 lock.unlock();
             }
-
+            System.out.println("Ciclo numero: " + i);
 //            var t0 = System.currentTimeMillis();
 
             try {
@@ -113,5 +113,6 @@ public class BoidsSimulator {
 //            }
 
         }
+        updateBoidsList.forEach(UpdateBoids::interrupt);
     }
 }
