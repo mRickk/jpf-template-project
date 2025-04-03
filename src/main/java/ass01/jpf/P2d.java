@@ -7,8 +7,8 @@ package ass01.jpf;
  */
 public class P2d {
 
-    public final double x;
-    public final double y;
+    private final double x;
+    private final double y;
 
     public P2d(double x, double y) {
         this.x = x;

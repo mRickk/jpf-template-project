@@ -16,8 +16,8 @@ package ass01.jpf;
  */
 public class V2d {
 
-    public final double x;
-    public final double y;
+    private final double x;
+    private final double y;
 
     public V2d(double x, double y) {
         this.x = x;
